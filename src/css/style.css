@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(34, 34, 34);
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+}
+
+@media (max-width: 990px){
+    
+}
+
+@media (max-width: 920px){
+
+}
+  
+@media (max-width: 850px){
+    
+}
+  
+@media (max-width: 760px){
+
+}
+  
+@media (max-width: 666px){
+
+}
+  
+@media (max-width: 575px){
+    
+}
+  
+@media (max-width: 475px){
+    
+}
+
+@media (max-width: 350px){
+    
+}
+  
+@media (max-width: 422px){
+
+}
