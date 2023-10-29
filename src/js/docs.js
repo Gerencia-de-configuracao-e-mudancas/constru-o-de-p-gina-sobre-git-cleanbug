@@ -1,125 +1,221 @@
 const gitCommands = [
     {
-        name: "git help",
-        description: 
+      command: 'git clone',
+      description: 'Clona um repositório remoto para o seu sistema local.'
     },
     {
-        name: 'git config --global user.name "Leonardo Comelli"',
-        description: 
+      command: 'git pull',
+      description: 'Puxa as alterações mais recentes do repositório remoto para a sua ramificação atual.'
     },
     {
-        name: "git config --global user.email leonardo@software-ltda.com.br",
-        description: 
+      command: 'git push',
+      description: 'Envia as alterações locais para um repositório remoto.'
     },
     {
-        name: "git init",
-        description: 
+      command: 'git add',
+      description: 'Adiciona mudanças no diretório de trabalho ao índice (staging area).'
     },
     {
-        name: "git status",
-        description: 
+      command: 'git commit',
+      description: 'Registra as mudanças no repositório e cria um novo commit.'
     },
     {
-        name: "git add",
-        description: 
+      command: 'git branch',
+      description: 'Lista, cria ou exclui branches (ramificações).'
     },
     {
-        name: "git commit",
-        description: 
+      command: 'git merge',
+      description: 'Combina alterações de uma ramificação em outra.'
     },
     {
-        name: "git rm",
-        description: 
+      command: 'git rebase',
+      description: 'Reorganiza commits para aplicá-los de forma linear.'
     },
     {
-        name: "git log",
-        description: 
+      command: 'git log',
+      description: 'Exibe o histórico de commits do repositório.'
     },
     {
-        name: "git checkout",
-        description: 
+      command: 'git status',
+      description: 'Exibe o status atual do repositório, incluindo arquivos modificados e não rastreados.'
     },
     {
-        name: "git reset",
-        description: 
+      command: 'git diff',
+      description: 'Exibe as diferenças entre alterações não confirmadas e a última confirmação.'
     },
     {
-        name: "git remote",
-        description: 
+      command: 'git remote',
+      description: 'Gerencia repositórios remotos conectados ao repositório local.'
     },
     {
-        name: "git push",
-        description: 
+      command: 'git init',
+      description: 'Inicia um novo repositório Git local.'
     },
     {
-        name: "git pull",
-        description: 
+      command: 'git tag',
+      description: 'Gerencia tags (etiquetas) para marcar commits específicos.'
     },
     {
-        name: "git fetch",
-        description: 
+      command: 'git blame',
+      description: 'Exibe quem modificou as linhas de um arquivo e o commit associado.'
     },
     {
-        name: "git clone",
-        description: 
+      command: 'git show',
+      description: 'Exibe informações sobre um commit específico.'
     },
     {
-        name: "git tag",
-        description: 
+      command: 'git fetch',
+      description: 'Recupera as informações dos repositórios remotos sem fazer mesclagem.'
     },
     {
-        name: "git branch",
-        description: 
+      command: 'git stash',
+      description: 'Guarda temporariamente as mudanças locais não confirmadas.'
     },
     {
-        name: ,
-        description: 
+      command: 'git cherry-pick',
+      description: 'Aplica um commit específico de uma ramificação em outra.'
     },
     {
-        name: ,
-        description: 
+      command: 'git remote add',
+      description: 'Adiciona um novo repositório remoto.'
     },
     {
-        name: ,
-        description: 
+      command: 'git remote remove',
+      description: 'Remove um repositório remoto.'
     },
     {
-        name: ,
-        description: 
+      command: 'git checkout',
+      description: 'Permite alternar entre branches ou restaurar arquivos.'
     },
     {
-        name: "git init",
-        description: "Inicializar um repositório Git. Cria um novo repositório Git na pasta atual.",
+      command: 'git reset',
+      description: 'Redefine o estado do repositório para um commit específico.'
     },
     {
-        name: "git clone",
-        description: "Clonar um repositório existente. Cria uma cópia local de um repositório Git existente.",
+      command: 'git rm',
+      description: 'Remove arquivos do diretório de trabalho e do índice.'
     },
     {
-        name: "git add",
-        description: "Adicionar arquivos ao índice. Coloca as alterações feitas em arquivos na área de preparação para o próximo commit.",
+      command: 'git clean',
+      description: 'Remove arquivos não rastreados e diretórios do diretório de trabalho.'
     },
     {
-        name: "git commit",
-        description: "Criar um novo commit. Registra as alterações na área de preparação em um novo commit.",
+      command: 'git bisect',
+      description: 'Ajuda a encontrar o commit que introduziu um bug usando pesquisa binária.'
     },
     {
-        name: "git pull",
-        description: "Buscar alterações do repositório remoto. Recupera as alterações do repositório remoto para a branch local.",
+      command: 'git reflog',
+      description: 'Registra todas as ações de referência para facilitar a recuperação de commits perdidos.'
     },
     {
-        name: "git push",
-        description: "Enviar alterações para o repositório remoto. Envia os commits locais para o repositório remoto.",
+      command: 'git log --graph',
+      description: 'Exibe o histórico de commits em um formato de gráfico.'
     },
     {
-        name: "git branch",
-        description: "Listar branches. Exibe a lista de branches no repositório local.",
+      command: 'git log --author',
+      description: 'Filtra o histórico de commits por autor.'
     },
     {
-        name: "git merge",
-        description: "Mesclar alterações de outra branch. Mescla as alterações de uma branch em outra branch.",
+      command: 'git log --since',
+      description: 'Filtra o histórico de commits por data.'
     },
-];
+    {
+      command: 'git log -p',
+      description: 'Exibe as diferenças (patch) introduzidas por cada commit.'
+    },
+    {
+      command: 'git log -n',
+      description: 'Limita o número de commits exibidos.'
+    },
+    {
+      command: 'git config',
+      description: 'Configura opções do Git, como nome de usuário e email.'
+    },
+    {
+      command: 'git cherry-pick',
+      description: 'Aplica um commit específico de uma ramificação em outra.'
+    },
+    {
+      command: 'git describe',
+      description: 'Exibe a descrição legível de um commit em relação às tags mais recentes.'
+    },
+    {
+      command: 'git grep',
+      description: 'Pesquisa o conteúdo de arquivos no repositório.'
+    },
+    {
+      command: 'git log --pretty',
+      description: 'Controla o formato da saída do comando `git log`.'
+    },
+    {
+      command: 'git merge --squash',
+      description: 'Combina alterações em um único commit.'
+    },
+    {
+      command: 'git reset --hard',
+      description: 'Redefine o estado do repositório e do diretório de trabalho para um commit específico, descartando todas as alterações não confirmadas.'
+    },
+    {
+      command: 'git revert',
+      description: 'Cria um novo commit que desfaz as alterações introduzidas por um commit específico.'
+    },
+    {
+      command: 'git mv',
+      description: 'Move ou renomeia arquivos no repositório.'
+    },
+    {
+      command: 'git clean -n',
+      description: 'Exibe os arquivos não rastreados que seriam removidos, mas não os remove.'
+    },
+    {
+      command: 'git clean -f',
+      description: 'Remove permanentemente os arquivos não rastreados do diretório de trabalho.'
+    },
+    {
+      command: 'git config --global',
+      description: 'Configura opções globais do Git para todos os repositórios.'
+    },
+    {
+      command: 'git config --list',
+      description: 'Exibe todas as configurações do Git.'
+    },
+    {
+      command: 'git init --bare',
+      description: 'Inicializa um repositório Git nu, sem diretório de trabalho.'
+    },
+    {
+      command: 'git log --oneline',
+      description: 'Exibe o histórico de commits em uma única linha por commit.'
+    },
+    {
+      command: 'git remote -v',
+      description: 'Exibe URLs dos repositórios remotos configurados.'
+    },
+    {
+        command: "git help <qualquer_comando_git>",
+        description: "Exibe a ajuda para um comando Git específico."
+    },
+    {
+        command: "git config --global user.name",
+        description: "Define o nome do usuário globalmente."
+    },
+    {
+        command: "git config --global user.email",
+        description: "Define o email do usuário globalmente."
+    },
+    {
+        command: "git config --global core.editor",
+        description: "Define o editor de texto padrão globalmente."
+    },
+    {
+        command: "git config --global merge.tool",
+        description: "Define a ferramenta de merge globalmente."
+    },
+    {
+        command: "git config --global core.excludesfile",
+        description: "Define o arquivo de exclusões global."
+    },
+];  
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -128,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gitCommands.forEach((command) => {
         const listItem = document.createElement("li");
         const heading = document.createElement("h2");
-        heading.innerHTML = `<span class="command-name">${command.name}</span> - ${command.description}`;
+        heading.innerHTML = `<span class="command-name">${command.command}</span> - ${command.description}`;
         listItem.appendChild(heading);
         ulComandos.appendChild(listItem);
     });
