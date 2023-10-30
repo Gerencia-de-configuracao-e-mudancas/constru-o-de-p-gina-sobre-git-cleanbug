@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git e GitHub</title>
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+</head>
+<body>
+    <header>
+        <div class="conteiner-logo-header">
+            <div class="mainHeader">
+                <div class="logoHeader">
+                    <a class="" href="./index.html" tabindex="1">
+                        <img class="navbar-brand" alt="Git logo" src="./assets/img/logoGit.png">
+                    </a>
+                </div>
+                <div id="titleHeader">
+                    <h1>Git</h1>
+                    <h1><span>Github</span></h1>
+                </div>
+            </div>
+            <div class="menu-section">
+                <div class="menu-toggle">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+                <div class="navContainer">
+                    <nav class="navHeader">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./index.html"><i class="bi bi-house-door"></i> História</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./docs.html"><i class="bi bi-file-earmark-text"></i> Documentação</a>
+                            </li>
+        
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="{{ url_for('estude') }}"><i class="bi bi-book"></i> Estude</a>
+                            </li>
+                            
+                            <li class="nav-item"><a class="nav-link" href="{{ url_for('gallery') }}"><i class="bi bi-camera-video"></i> NS Mídia</a></li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('missoes') }}"><i class="fa-solid fa-user-astronaut"></i> Missões</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('sobre') }}"><i class="fa-solid fa-exclamation"></i> Sobre</a>
+                            </li>
+                            {% if session['usuario_logado'] %}
+                            <li class="nav-item">
+                              <a class="nav-link" href="{{ url_for('logout') }}"><i class="bi bi-box-arrow-right"></i> Logout</a>
+                            </li>
+                            {% else %}
+                            <li class="nav-item">
+                              <a class="nav-link" href="{{ url_for('login') }}"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+                            </li>
+                            {% endif %} -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="definition">
+            <h4>O que é o Git</h4>
+            <div>
+                <p>O Git é um sistema de controle de versão distribuído amplamente utilizado para o rastreamento de alterações em projetos de software. Ele permite que 
+                    várias pessoas trabalhem em um projeto simultaneamente, gerenciando as alterações de código de forma eficiente. O Git registra e armazena todas as 
+                    modificações feitas em um repositório, permitindo que os desenvolvedores acompanhem o histórico, revertam alterações, resolvam conflitos e colaborem 
+                    de maneira mais eficaz. É uma ferramenta essencial para o desenvolvimento de software colaborativo. 
+                </p>
+                <p>O Git é uma ferramenta de linha de comando que pode ser executada em um terminal ou prompt de comando. No entanto, também existem várias interfaces 
+                    gráficas de usuário (GUIs) disponíveis para facilitar o uso do Git. Alguns exemplos populares incluem o GitKraken, o SourceTree e o GitHub Desktop. 
+                    Essas GUIs fornecem uma interface mais amigável para realizar as operações do Git, como clonar repositórios, fazer commits, criar branches e mesclar 
+                    alterações. A escolha da ferramenta depende da preferência pessoal e do nível de familiaridade com a linha de comando. 
+                </p>
+            </div>
+
+            <h4>O que é o GitHub</h4>
+            <div>
+                <p>O GitHub é uma plataforma essencial para engenheiros de software, com mais de 25 milhões de usuários. É um serviço baseado em nuvem que hospeda o Git. 
+                    Ele permite que os desenvolvedores colaborem e façam alterações em projetos compartilhados, mantendo um registro detalhado de seu progresso. Sendo popular 
+                    porque hospeda mais de 100 milhões de repositórios, incluindo projetos de código aberto e sua interface amigável torna acessível para usuários com pouco 
+                    conhecimento técnico. Para começar a usar o GitHub, crie um repositório para armazenar os arquivos do projeto e explore os recursos da plataforma. 
+                </p>
+            </div>
+        </section>
+
+        <section id="history">
+            <h4>Historia e porque usar o Git</h4>
+            <div>
+                <p>O Git foi criado por Linus Torvalds, o mesmo criador do Linux, em 2005. Ele desenvolveu o Git para facilitar o controle de versão do código-fonte do kernel 
+                    do Linux, que era um projeto complexo com uma grande comunidade de desenvolvedores colaborando. O Git resolveu problemas de colaboração, permitindo que 
+                    várias pessoas trabalhassem no mesmo projeto simultaneamente, gerenciando eficientemente as alterações de código. 
+                </p>
+                <p>Uma das principais vantagens do Git é a sua distribuição. Cada desenvolvedor possui uma cópia completa do repositório, o que permite que eles trabalhem 
+                    offline e façam alterações independentes. Além disso, o Git rastreia as alterações de forma eficiente, permitindo que os desenvolvedores revertam para 
+                    versões anteriores e comparem diferentes versões de arquivos. 
+                </p>
+                <p>O Git também oferece recursos avançados, como branches (ramificações), que permitem que os desenvolvedores trabalhem em novas funcionalidades ou correções de 
+                    bugs sem interferir no código principal. Isso facilita a colaboração e o trabalho em equipe. 
+                </p>
+                <p>No entanto, o Git também tem algumas desvantagens. Pode ter uma curva de aprendizado íngreme para iniciantes, pois possui uma sintaxe específica e requer o uso 
+                    da linha de comando. Além disso, o Git pode consumir uma quantidade significativa de espaço em disco, especialmente para projetos grandes com muitos arquivos 
+                    e histórico de alterações.
+                </p>
+                <p>No geral, o Git revolucionou a forma como os desenvolvedores colaboram no desenvolvimento de software, proporcionando uma maneira eficiente e segura de controlar 
+                    as alterações do código-fonte. Sua popularidade cresceu rapidamente devido à sua eficácia e foi amplamente adotado pela comunidade de desenvolvedores em todo 
+                    o mundo. 
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2023 - Sistema de Gerenciamento Git</p> 
+    </footer>
+</body>
+</html>
