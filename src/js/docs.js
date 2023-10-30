@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     gitCommands.forEach((command) => {
         const listItem = document.createElement("li");
-        const heading = document.createElement("h3");
+        const heading = document.createElement("p");
         heading.innerHTML = `<span class="command-name">${command.command}</span> - ${command.description}`;
         listItem.appendChild(heading);
         ulComandos.appendChild(listItem);
