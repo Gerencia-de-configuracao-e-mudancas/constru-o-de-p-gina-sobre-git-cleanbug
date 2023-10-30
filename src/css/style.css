@@ -13,6 +13,9 @@ body {
 
 main {
   margin: 50px 250px 130px 250px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
 }
 section {
   text-align: justify;
@@ -27,6 +30,9 @@ section div p {
   margin-bottom: 15px;
 }
 
+main #definition, main #history {
+  color: #000000;
+}
 
 
 @media (max-width: 990px){
