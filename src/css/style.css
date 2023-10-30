@@ -17,15 +17,19 @@ main {
   border-radius: 5px;
   padding: 30px;
 }
+
 section {
   text-align: justify;
 }
+
 section h4 {
   margin-bottom: 20px;
 }
+
 section div {
   margin-bottom: 50px;
 }
+
 section div p {
   margin-bottom: 15px;
 }
